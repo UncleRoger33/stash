@@ -203,7 +203,7 @@ export const SceneFileInfoPanel: React.FC<ISceneFileInfoPanelProps> = (
         <span className="col-4">
           <FormattedMessage id="media_info.downloaded_from" />
         </span>
-        <a href={TextUtils.sanitiseURL(props.scene.url)} className="col-8" target="_blank">
+        <a href={TextUtils.sanitiseURL(props.scene.url)} className="col-8" target="_blank" rel="noreferrer">
           <TruncatedText text={props.scene.url} />
         </a>
       </div>
